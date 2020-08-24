@@ -1,5 +1,5 @@
-Pfad = 'C:\Users\Regis_PC\Desktop\BA\Daten\Test3';%Pfad in dem die Bilder des Detektors liegen
-file = dir(fullfile((Pfad),'*.png'));                                       % Array mit x*1 Einträgen, wobei x = Anzahl der Dateien(+Unterordner) im Pfad
+Pfad = 'C:\Users\';%Pfad in dem die Bilder des Detektors liegen
+file = dir(fullfile((Pfad),'*.png'));                                       % Array mit x*1 EintrÃ¤gen, wobei x = Anzahl der Dateien(+Unterordner) im Pfad
 D = 12002;
 Stepsize = 3.6;
 NSteps = 100;
@@ -7,13 +7,13 @@ theta = Stepsize:Stepsize:NSteps*Stepsize;
 
 tic;                                                        %jeder Eintrag ist ein Link zu einem Bild
 NF = length(file);                                      % Anzahl der Daten im Ordner erzeugen
-images = cell(NF,1);                                    %Matrix anlegen in der Bilddaten eingefügt werden
+images = cell(NF,1);                                    %Matrix anlegen in der Bilddaten eingefÃ¼gt werden
 Groesse = imread(fullfile(Pfad, file(1).name));
 [height, width, dim] = size(Groesse);
 sinogram = zeros([NF,width]);
     for k = 1 : NF                                          %
    %Beliebige Bearbeitung der Bilddaten
-   images{k} = imread(fullfile(Pfad, file(k).name));     %öffne Einzelbild, lies Pixeldaten in images Matrix
+   images{k} = imread(fullfile(Pfad, file(k).name));     %Ã¶ffne Einzelbild, lies Pixeldaten in images Matrix
    
    img=images{k};
    %img=rgb2gray(img);
