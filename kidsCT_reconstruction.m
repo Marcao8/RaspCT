@@ -1,7 +1,7 @@
 clear all; clc
 
 %Pfad in dem die nachbearbeiteten Bilder liegen
-Pfad = 'C:\Users\Regis_PC\Desktop\HIResAlmond\Cawo0502\Bearbeitet\';
+Pfad = 'C:\Users\***';
 newfolder = '\slices';
 
 newfolder_path = [Pfad,newfolder];
