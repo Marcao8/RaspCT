@@ -1,7 +1,7 @@
 clear all; clc
 
 %Pfad in dem die Bilder des Detektors liegen
-Pfad = 'D:\Research\kids CT - Marcus\2020_01_30 - neueFolie';
+Pfad = './';
 newfolder = '\processed';
 
 newfolder_path = [Pfad,newfolder];
