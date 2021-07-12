@@ -1,3 +1,7 @@
+#This is a basic projection acquisition script for the Raspberry Pi X-ray detector
+#Detector is based on Raspberry Pi 3B+, Omnivision 5647 camera and scintillation screen from xray casettes, in lighttight enclosure
+#author: markus.baecker@ovgu.de
+#2019
 import RPi.GPIO as GPIO
 from time import sleep
 from picamera import PiCamera
@@ -10,6 +14,8 @@ import time
 #today = datetime.datetime.now()
 #place= "/home/pi/Desktop" + today
 #os.mkdir(place)
+
+#Base detector camera settings
 steppin=23
 expo= 1000000*6
 Speed=0.005
@@ -17,11 +23,12 @@ GPIO.setmode(GPIO.BCM)
 GPIO.setup(steppin,GPIO.OUT)
 camera = PiCamera(
     resolution=(2592, 1680),
-    framerate=(Fraction(1,4)),#Fraction(2,1), 
+    framerate=(Fraction(1,4)),#Fraction(2,1),  #Cave: leaving a fraction framerate at camera closeing causes system freeze
     sensor_mode=0,
     )
-#(Fraction(1,6),30)
 
+
+#fixing camera settings
 camera.shutter_speed = expo
 print(camera.shutter_speed)
 camera.iso = 800
@@ -35,16 +42,17 @@ sleep(2)
 
 p=time.time()
 try:
-    for i in range(4): #start bei 0 bis 199
+    for i in range(4): #Number of acquisitons
+        # each pulse equals 1.8 degree turn of sample
         GPIO.output(steppin,GPIO.LOW)
         sleep(Speed)
         GPIO.output(steppin,GPIO.HIGH)
         sleep(Speed)
         
         camera.capture('Light_%03d.jpeg'% i,use_video_port=True,quality=100)
-        print ("Schritt")
+        print ("Step: ")
         print (i+1)
-except:
+except: #fix for camera freeze issue, caused by camera driver
     camera.framerate=5
     camera.close()
 GPIO.output(steppin,GPIO.LOW)
