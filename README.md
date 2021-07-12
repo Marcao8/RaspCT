@@ -7,7 +7,7 @@ The goal was, to create a low cost, portable prototype CT imaging system for stu
 <p align="center">
   <img src="https://github.com/Marcao8/Skripte/blob/master/Testaufbau.png" width="350" alt="general setup">
   <img src="https://github.com/Marcao8/Skripte/blob/master/ConeRecon.gif" width="350" alt="axial slices of an almond and two hoses"/>
-  <img src="https://github.com/Marcao8/Skripte/blob/master/ConeRecon.gif" width="350" alt="axial slices of an almond and two hoses"/>
+  
 </p>
 
 ## BOM
