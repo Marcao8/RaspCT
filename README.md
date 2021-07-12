@@ -1,6 +1,7 @@
 # RaspCT basic interaction scripts
 This repository includes necessary files for creation and processing of projections, aquiered by the RaspCT scanner. 
 This project is based on a student project of mine for medical systems engineering. 
+The goal was, to create a low cost, portable prototype CT imaging system for student experiments.
 
 
 <p align="center">
@@ -18,3 +19,5 @@ This project is based on a student project of mine for medical systems engineeri
 * 1x low Voltage Stepper Motor Driver (e.g. ST Micro STSPIN220)
 * some 3d printed tables, enclosures and mounts
 * aluminium profiles for rigid, portable mounting
+
+The cost of all parts was 200 €, excluding the X-Ray source.
