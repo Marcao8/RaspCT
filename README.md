@@ -1,7 +1,7 @@
 # RaspCT basic interaction scripts
 This repository includes necessary files for creation and processing of projections, aquiered by the RaspCT scanner. 
 This project is based on a student project of mine for medical systems engineering. 
-The goal was, to create a low cost, portable prototype CT imaging system for student experiments.
+The goal is to create a low cost, portable prototype CT imaging system for student experiments.
 
 
 <p align="center">
