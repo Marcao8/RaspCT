@@ -1,4 +1,9 @@
 # RaspCT basic interaction scripts
+Ever wanted to build your own low cost xray imaging detector? Well this project is just for you.
+
+:warning: **X-RAYS are ionizing radiation**: Use appropriate shielding and protective equipment!
+
+
 This repository includes necessary files for creation and processing of projections, aquiered by the RaspCT scanner. 
 This project is based on a student project of mine for medical systems engineering. 
 The goal is to create a low cost, portable prototype CT imaging system for student experiments.
