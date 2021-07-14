@@ -21,8 +21,8 @@ The goal is to create a low cost, portable prototype CT imaging system for stude
 * 1x  10 by 10 cm scintillation screen (from used X-ray casettes, Gd2O2S:Tb recommended)
 * 1x Xray source (e.g. Moxtek® MAGPRO 60kV 12W commercial benchtop source)
 * 1x Stepper Motor, 4 wire
-* 1x low Voltage Stepper Motor Driver (e.g. ST Micro STSPIN220)
-* some 3d printed tables, enclosures and mounts
-* aluminium profiles for rigid, portable mounting
+* 1x Low voltage stepper motor driver (e.g. ST Micro STSPIN220)
+* 3D printed tables, enclosures and mounts
+* Aluminium profiles for rigid, portable mounting
 
 The cost of all parts was 200 €, excluding the X-Ray source.
