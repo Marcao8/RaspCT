@@ -1,5 +1,5 @@
 # RaspCT basic interaction scripts
-Ever wanted to build your own low cost xray imaging detector? Well this project is just for you.
+Ever wanted to build your own low cost xray imaging detector? 
 
 :warning: **X-RAYS are ionizing radiation**: Use appropriate shielding and protective equipment!
 
